@@ -25,19 +25,19 @@ INSERT INTO Buku (judul,pengarang,penerbit,isbn,tahun_terbit, jumlah_tersedia,ka
 -- 3 data peminjaman
 INSERT INTO Peminjaman(anggota_id, buku_id,tanggal_pinjam,tanggal_batas_kembali) VALUES
 -- peminjaman user 1
-(1,1,'2024-01-01','2024-01-08'),
-(1,2,'2024-01-08','2024-01-15'),
-(1,3,'2024-01-15','2024-01-23'),
+(1,1,'2024-01-01','2024-01-15'),
+(1,2,'2024-01-08','2024-01-22'),
+(1,3,'2024-01-15','2024-01-29'),
 -- peminjaman user 2
-(2,4,'2024-01-02','2024-01-09'),
-(2,5,'2024-01-09','2024-01-16'),
-(2,6,'2024-01-16','2024-01-24'),
+(2,4,'2024-01-02','2024-01-16'),
+(2,5,'2024-01-09','2024-01-23'),
+(2,6,'2024-01-16','2024-01-30'),
 -- peminjaman user 3
-(3,7,'2024-01-03','2024-01-10'),
-(3,8,'2024-01-11','2024-01-18'),
-(3,9,'2024-01-19','2024-01-26');
+(3,7,'2024-01-03','2024-01-17'),
+(3,8,'2024-01-10','2024-01-24'),
+(3,9,'2024-01-17','2024-01-31');
 
 -- user 3 terlambat mengembalikan 5 hari
 UPDATE Peminjaman
-SET denda = DATEDIFF(tanggal_kembali,tanggal_batas_kembali) * 1000 --denda diasumsikan 1000 per hari
+SET denda = DATEDIFF(tanggal_kembali,tanggal_batas_kembali) * 1000 --denda 1000 per hari
 WHERE tanggal_kembali > tanggal_batas_kembali AND anggota_id=3;
