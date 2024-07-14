@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: left;
+    color: #333;
+  }
+  
+  siperpus {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label,
+  select,
+  option {
+    font-family: "Comic Sans MS", cursive;
+    font-size: 12px;
+  }
+  
+  label {
+    margin-left: 30px;
+    margin-bottom: 5px;
+    display: inline-block;
+    float: right;
+  }
+  
+  input,
+  option {
+    border: 1px solid;
+    padding: 2px;
+    width: 97%;
+    margin-left: 2px;
+    margin-bottom: 5px;
+  }
+  
+  .input-1 {
+    padding: 16px;
+    width: auto;
+    margin-bottom: 5px;
+    float: left;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 12px;
+  }
+  
+  .category {
+    width: 100%;
+    padding: 2px;
+    margin-left: 2px;
+    margin-bottom: 5px;
+    float: left;
+  }
+  
+  .input-2 {
+    width: 25%;
+    margin-bottom: 5px;
+    float: left;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 12px;
+  }
+  
+  button-1 {
+    padding: 5px 25px;
+    margin-left: 105%;
+    background-color: #08f26e;
+    color: black;
+    border: 1px solid;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 12px;
+  }
+  
+  button-2 {
+    padding: 5px 25px;
+    margin-left: 47%;
+    border-radius: 0px;
+    background-color: #ff7f7f;
+    color: black;
+    border: 1px solid;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 12px;
+  }
+  
