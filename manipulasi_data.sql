@@ -1,8 +1,3 @@
--- user 3 terlambat mengembalikan 5 hari
-UPDATE Peminjaman
-SET denda = DATEDIFF(tanggal_kembali,tanggal_batas_kembali) * 1000 --denda diasumsikan 1000 per hari
-WHERE tanggal_kembali > tanggal_batas_kembali AND anggota_id=3;
-
 -- daftar buku yang tidak pernah dipinjam
 SELECT b.judul
 FROM Buku as b
