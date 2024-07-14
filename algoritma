@@ -8,13 +8,13 @@ def denda_buku(tanggalKembali, tanggalPinjam, daftarBuku, batasMaxPinjaman=14, d
     tanggal_kembali = datetime.strptime(tanggalKembali,'%Y-%m-%d')
     tanggal_pinjam = datetime.strptime(tanggalPinjam,'%Y-%m-%d')
     lama_pinjam = (tanggal_kembali-tanggal_pinjam).days
-    denda_per_buku = []
+    denda = []
     if lama_pinjam > batasMaxPinjaman:
         hari_terlambat = lama_pinjam-batasMaxPinjaman
         for buku in daftarBuku:
             total = hari_terlambat * dendaHarian
-            denda_per_buku.append((buku.judul, total))
+            denda.append((buku.judul, total))
     else:
         for buku in daftarBuku:
-            denda_per_buku.append((buku.judul, 0))
-    return denda_per_buku
+            denda.append((buku.judul, 0))
+    return denda
